@@ -29,5 +29,11 @@
     "node",
     "glitch",
     "express"
-  ]
+  ],
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-config-standard-jsx": "^8.1.0",
+    "eslint-plugin-react": "^7.14.3"
+  }
 }
