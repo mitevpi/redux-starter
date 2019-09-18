@@ -17,7 +17,9 @@
   "extends": ["standard-jsx",
     "airbnb-base",
     "plugin:prettier/recommended",
-    "eslint:recommended"],
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "rules": {
     "react/jsx-no-bind": [
       "error",

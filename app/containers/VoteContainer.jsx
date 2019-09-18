@@ -1,27 +1,27 @@
 /* container which maps state and dispatches to its props 
   so it can be referenced in the VoteButtons component */
 
-const { connect } = require('react-redux');
-const actions = require('../actions');
-const VoteButtons = require('../components/VoteButtons');
+const { connect } = require("react-redux");
+const actions = require("../actions");
+const VoteButtons = require("../components/VoteButtons.jsx");
 
-const mapStateToProps = function(state) {
+const mapStateToProps = (state) => {
   return {
     voteScore: state.voteScore,
     voteCount: state.voteCount
-  }
-}
+  };
+};
 
-const mapDispatchToProps = function(dispatch) {
+const mapDispatchToProps = (dispatch) => {
   return {
-    onUpvote: function() {
+    onUpvote() {
       dispatch(actions.upvote())
     },
-    onDownvote: function() {
+    onDownvote() {
       dispatch(actions.downvote())
     }
-  }
-}
+  };
+};
 
 const VoteContainer = connect(
   mapStateToProps,
