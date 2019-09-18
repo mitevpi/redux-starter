@@ -13,8 +13,11 @@
       "version": "detect"
     }
   },
-  "plugins": ["react"],
-  "extends": ["standard-jsx"],
+  "plugins": ["react", "prettier"],
+  "extends": ["standard-jsx",
+    "airbnb-base",
+    "plugin:prettier/recommended",
+    "eslint:recommended"],
   "rules": {
     "react/jsx-no-bind": [
       "error",
@@ -24,6 +27,7 @@
         "ignoreRefs": true
       }
     ],
+    "prettier/prettier": "warn",
     "react/no-did-update-set-state": "error",
     "react/no-unknown-property": "error",
     "react/no-unused-prop-types": "error",
