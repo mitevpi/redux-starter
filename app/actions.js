@@ -1,21 +1,19 @@
 /* actions */
 
 module.exports = {
- 
-  UPVOTE: 'UPVOTE',
-  
-  DOWNVOTE: 'DOWNVOTE',
+  UPVOTE: "UPVOTE",
 
-  upvote: function() {
+  DOWNVOTE: "DOWNVOTE",
+
+  upvote() {
     return {
       type: this.UPVOTE
-    }
+    };
   },
 
-  downvote: function() {
+  downvote() {
     return {
       type: this.DOWNVOTE
-    }
+    };
   }
-  
-}
+};

@@ -5,20 +5,20 @@ const { connect } = require("react-redux");
 const actions = require("../actions");
 const VoteButtons = require("../components/VoteButtons.jsx");
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     voteScore: state.voteScore,
     voteCount: state.voteCount
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return {
     onUpvote() {
-      dispatch(actions.upvote())
+      dispatch(actions.upvote());
     },
     onDownvote() {
-      dispatch(actions.downvote())
+      dispatch(actions.downvote());
     }
   };
 };
